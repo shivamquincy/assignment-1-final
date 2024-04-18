@@ -1,0 +1,119 @@
+.submitButton {
+    background-color: #3a244a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  /* login/Page.module.css */
+
+  /* login/Page.module.css */
+  /* login/Page.module.css */
+.containersignup {
+  display: flex;
+  flex-direction: row;
+ justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  height: 100vh; /* Set the container height to 100% of the viewport height */
+}
+
+.img1 {
+  flex: 1; /* This will make the image section take up half of the container's width */
+  max-width: 50%; /* Ensure the image takes up half of the container's width */
+  margin-right: 20px;
+  }
+
+.loginForm {
+  flex: 1; /* This will make the form section take up the other half of the container's width */
+  max-width: 400px; /* Ensure the form takes up half of the container's width */
+  border: 2px solid #ccc; /* Add a border with a color of #ccc */
+  border-radius: 8px; /* Add a border radius of 8px */
+  width: 200px; /* Add a fixed width to the form container */
+  padding: 20px; /* Add some padding inside the form */
+}
+
+.exclamationlinky{
+  text-decoration: underline;
+  color: #d72638;
+ }
+  
+   .formcontent form {
+    display: flex;
+    flex-direction: column;
+  }
+  .signupLink {
+    display: inline-block; /* Make the anchor tag behave like a block element */
+    margin: 0;
+    padding: 0;
+    color: #3a244a;
+    text-decoration: underline; /* Remove default underline */
+    font-weight: bold !important; /* Set font weight to bold */
+    font-size: inherit; /* Inherit font size from parent */
+  }
+  
+  .formcontent form input,
+  .formcontent form select {
+    border: none; /* Remove the border */
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
+    padding: 8px; /* Add padding for spacing */
+    margin-bottom: 15px; /* Add some space between each form element */
+    width: calc(100% - 16px); /* Ensure the input/select takes up full width */
+  }
+  
+.text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+.exclamation {
+  color: #d72638;
+}
+
+.text h2 {
+  margin: 0; /* Remove default margin to allow text elements to align properly */
+  padding: 0; /* Remove default padding */
+  color: #3a244a;
+
+}
+.formcontent form input:focus,
+.formcontent form select:focus {
+  outline: none; /* Remove the default focus outline */
+  border-bottom: 1px solid #3a244a; /* Change bottom border color on focus */
+}
+
+
+@media screen and (max-width: 900px) {
+  .img1 {
+    max-width: 70%; /* Set maximum width for the image on tablets */
+  }
+
+  .loginForm {
+    max-width: 80%; /* Set form container width to 80% on tablets */
+  }
+}
+/* Adjustments for small screens */
+@media screen and (max-width: 600px) {
+  .containersignup {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    height: auto; /* Auto height for smaller screens */
+  }
+
+  .img1 {
+    display: none; /* Hide the image on small screens */
+  }
+
+  .loginForm {
+    max-width: 90%; /* Set form container width to 90% on small screens */
+    width: 100%; /* Ensure the form takes up full width */
+    margin-top: 20px; /* Add some space between the image and form on small screens */
+  }
+
+  .formcontent form input,
+  .formcontent form select {
+    padding: 8px; /* Adjust padding for smaller screens */
+    margin-bottom: 10px; /* Adjust margin between form elements */
+    width: calc(100% - 16px); /* Adjust width to accommodate padding */
+  }
+}
